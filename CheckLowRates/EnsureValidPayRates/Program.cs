@@ -16,12 +16,12 @@ namespace EnsureValidPayRates
                 Console.Write("What is your hourly pay rate? ");
 
             else
-                Console.WriteLine("Your payrate it ${0} and you make ${1} a week!", Hourly, Hourly * 40);
+                Console.WriteLine("Your payrate is ${0}. You make ${1} every single week.", Hourly, Hourly * 40);
 
             Double Hourly2 = Convert.ToDouble(Console.ReadLine());
 
             if (Hourly2 < 5.65 || Hourly2 > 49.99)
-                Console.Write("I'm sorry, but your pay rate is incorrect.");
+                Console.Write("Error, Payrate is not valid.");
 
             else
                 Console.WriteLine("Your payrate it ${0} and you make ${1} a week!", Hourly2, Hourly2 * 40);
